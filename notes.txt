@@ -1,0 +1,13 @@
+1. cdnjs.com font-awesome
+copied linktag and pasted in head link
+2. fonts.google.com poppins
+embedded import url copy and paste in css sheet
+font-family: "Poppins", sans-serif;
+3. to transition color or font when hovering,
+transition:
+    color 0.3s ease-in-out,
+    font-size 0.3s ease-in-out;
+4. to have a small gradient effect on background 
+background:
+    linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)),
+    url("./img/header-image2.jpg");
