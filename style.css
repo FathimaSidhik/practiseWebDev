@@ -18,7 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* ----------------utility classes */
+/* ----------------utility classes------------- */
 
 .container {
   max-width: 1200px;
@@ -98,34 +98,8 @@ body {
   font-size: 2rem;
 }
 
-/* -----------------header-------------- */
-/* .header-box {
-  height: 250px;
-  background-image: url("/img/header-image2.jpg");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.h2-text {
-  text-transform: uppercase;
-}
-
-.button {
-  text-transform: uppercase;
-  margin-top: 10px;
-  padding: 5px 15px;
-  align-self: center;
-  background: rgb(36, 131, 49);
-  border-radius: 15px;
-  border: none;
-  color: #fff;
-} */
-
 /* ------------------showcase------------------- */
+
 .showcase-area {
   height: 50vh;
   background:
@@ -147,4 +121,69 @@ body {
 
 .main-title {
   text-transform: uppercase;
+}
+
+/* ---------------------------about-us---------------------------- */
+
+#about {
+  padding: 50px 60px;
+  background: #f5f5f7;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 3.2rem;
+}
+
+#about p {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+#about .small {
+  font-size: 1.6rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  /* border: 2px solid red; */
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+  transform: translate(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  /* border: 2px solid red; */
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
 }
